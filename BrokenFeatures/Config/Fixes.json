@@ -1,0 +1,320 @@
+{
+    "DisableNaturalArmorStacking": true,
+    "DisablePolymorphStacking": true,
+    "DisableCannyDefenseStacking": true,
+    "DisableAfterCombatDeactivationOfUnlimitedAbilities": true,
+    "FixMountedLongspearModifer": true,
+    "FixInherentSkillpoints": true,
+    "FixBackgroundModifiers": true,
+    "FixShadowSpells": true,
+    "MetamagicStacking": true,
+    "Aeon": {
+        "DisableAll": false,
+        "Enabled": {
+            "AeonBaneUses": true,
+            "AeonGreaterBane": true
+        }
+    },
+    "Azata": {
+        "DisableAll": false,
+        "Enabled": {
+            "AzataPerformanceResource": true,
+            "AzataSongToggles": true,
+            "FavorableMagic": true,
+            "ZippyMagic": true
+        }
+    },
+    "Lich": {
+        "DisableAll": false,
+        "Enabled": {
+            "DeathRush": true
+        }
+    },
+    "Trickster": {
+        "DisableAll": false,
+        "Enabled": {
+            "TricksterTricks": true
+        }
+    },
+    "Alchemist": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Archetypes": {
+            "Grenadier": {
+                "DisableAll": false,
+                "Enabled": {
+                    "BrewPotions": true,
+                    "PoisonResistance": true
+                }
+            }
+        }
+    },
+    "Arcanist": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "PreparedSpellUI": true
+            }
+        },
+        "Archetypes": {}
+    },
+    "Barbarian": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Archetypes": {}
+    },
+    "Bloodrager": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "AbysalBulk": true,
+                "LimitlessRage": true,
+                "Spellbook": true
+            }
+        },
+        "Archetypes": {
+            "Primalist": {
+                "DisableAll": false,
+                "Enabled": {
+                    "RagePowerFeatQualifications": true
+                }
+            },
+            "Steelblood": {
+                "DisableAll": false,
+                "Enabled": {
+                    "ArmoredSwiftness": true
+                }
+            },
+            "ReformedFiend": {
+                "DisableAll": false,
+                "Enabled": {
+                    "HatredAgainstEvil": true,
+                    "DamageReduction": true
+                }
+            }
+        }
+    },
+    "Cavalier": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "CavalierMobility": true,
+                "CavalierMountSelection": true,
+                "SupremeCharge": true
+            }
+        },
+        "Archetypes": {
+            "Gendarme": {
+                "DisableAll": false,
+                "Enabled": {
+                    "TransfixingCharge": true
+                }
+            }
+        }
+    },
+    "Fighter": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "AdvancedWeaponTraining": true,
+                "AdvancedArmorTraining": true,
+                "TwoHandedWeaponTraining": true
+            }
+        },
+        "Archetypes": {
+            "TwoHandedFighter": {
+                "DisableAll": false,
+                "Enabled": {
+                    "AdvancedWeaponTraining": true
+                }
+            }
+        }
+    },
+    "Monk": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Archetypes": {}
+    },
+    "Kineticist": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Archetypes": {}
+    },
+    "Paladin": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Archetypes": {}
+    },
+    "Ranger": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "FavoredEnemy": true
+            }
+        },
+        "Archetypes": {
+            "EspionageExpert": {
+                "DisableAll": false,
+                "Enabled": {
+                    "Trapfinding": true
+                }
+            }
+        }
+    },
+    "Rogue": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "Trapfinding": true,
+                "RogueTalentSelection": true,
+                "SlipperyMind": true
+            }
+        },
+        "Archetypes": {
+            "EldritchScoundrel": {
+                "DisableAll": false,
+                "Enabled": {
+                    "SneakAttackProgression": true,
+                    "RogueTalentProgression": true
+                }
+            },
+            "Rowdy": {
+                "DisableAll": false,
+                "Enabled": {
+                    "VitalForce": true
+                }
+            }
+        }
+    },
+    "Slayer": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "Trapfinding": true,
+                "StudiedTarget": true
+            }
+        },
+        "Archetypes": {}
+    },
+    "Witch": {
+        "DisableAll": false,
+        "Base": {
+            "DisableAll": false,
+            "Enabled": {
+                "DeathCurse": true,
+                "DeliciousFright": true,
+                "EvilEye": true,
+                "Hoarfrost": true,
+                "RestlessSlumber": true,
+                "Slumber": true
+            }
+        },
+        "Archetypes": {}
+    },
+    "Hellknight": {
+        "DisableAll": false,
+        "Enabled": {
+            "PentamicFaith": true
+        }
+    },
+    "Spells": {
+        "DisableAll": false,
+        "Enabled": {
+            "BelieveInYourself": true,
+            "BestowCurseGreater": true,
+            "CrusadersEdge": true,
+            "GreaterMagicWeapon": true,
+            "MagicalVestment": true,
+            "OdeToMiraculousMagic": true,
+            "RemoveFear": true,
+            "SecondBreath": true,
+            "ShadowConjuration": true,
+            "ShadowEvocation": true,
+            "ShadowEvocationGreater": true,
+            "WrackingRay": true
+        }
+    },
+    "Bloodlines": {
+        "DisableAll": false,
+        "Enabled": {
+            "BloodlineRestrictions": true
+        }
+    },
+    "Feats": {
+        "DisableAll": false,
+        "Enabled": {
+            "CraneWing": true,
+            "Endurance": true,
+            "FencingGrace": true,
+            "IndomitableMount": true,
+            "MountedCombat": true,
+            "PersistantMetamagic": true,
+            "SlashingGrace": true,
+            "SpiritedCharge": true,
+            "VitalStrike": true,
+            "WeaponFinesse": true
+        }
+    },
+    "MythicAbilities": {
+        "DisableAll": false,
+        "Enabled": {
+            "BloodlineAscendance": true,
+            "EnduringSpells": true,
+            "MythicCharge": true,
+            "SecondBloodline": true,
+            "SecondBloodragerBloodline": true
+        }
+    },
+    "Items": {
+        "DisableAll": false,
+        "Armor": {
+            "DisableAll": false,
+            "Enabled": {}
+        },
+        "Equipment": {
+            "DisableAll": false,
+            "Enabled": {
+                "MagiciansRing": true,
+                "MetamagicRods": true
+            }
+        },
+        "Weapons": {
+            "DisableAll": false,
+            "Enabled": {
+                "BladeOfTheMerciful": true,
+                "HonorableJudgement": true
+            }
+        }
+    },
+    "Crusade": {
+        "DisableAll": false,
+        "Buildings": {
+            "DisableAll": false,
+            "Enabled": {
+                "TrainingGrounds": true
+            }
+        }
+    }
+}

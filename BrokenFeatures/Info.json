@@ -1,0 +1,9 @@
+﻿{
+  "Id": "CyniikalVoidWizard",
+  "DisplayName": "VoidWizard",
+  "Author": "Cyniikal",
+  "ManagerVersion": "0.23.5",
+  "Requirements": [],
+  "AssemblyName": "VoidWizard.dll",
+  "EntryMethod": "VoidWizard.Main.Load"
+}
