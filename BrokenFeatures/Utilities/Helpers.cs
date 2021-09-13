@@ -21,6 +21,8 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using BrokenFeatures.Config;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace BrokenFeatures.Utilities {
     public static class Helpers {
@@ -47,6 +49,20 @@ namespace BrokenFeatures.Utilities {
             });
             init?.Invoke(result);
             return result;
+        }
+
+        public static SpellLevelList CreateSpellLevelList(int level, string[] spellIds)
+        {
+            List<BlueprintAbilityReference> spellList = new List<BlueprintAbilityReference>();
+            foreach (string id in spellIds)
+            {
+                spellList.Add(Resources.GetBlueprint<BlueprintAbility>(id).ToReference<BlueprintAbilityReference>());
+            }
+
+            SpellLevelList spellLevelList = new SpellLevelList(level);
+            spellLevelList.m_Spells = spellList;
+
+            return spellLevelList;
         }
 
         public static T CreateCopy<T>(T original, Action<T> init = null) {

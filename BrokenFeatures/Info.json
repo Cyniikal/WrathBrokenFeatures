@@ -1,9 +1,11 @@
 ﻿{
-  "Id": "CyniikalVoidWizard",
-  "DisplayName": "VoidWizard",
+  "Id": "CyniikalBrokenFeatures",
+  "DisplayName": "BrokenFeatures",
   "Author": "Cyniikal",
-  "ManagerVersion": "0.23.5",
+  "ManagerVersion": "0.23.0",
+  "Version": "1.0.0",
+  "GameVersion": "0.6.0n",
   "Requirements": [],
-  "AssemblyName": "VoidWizard.dll",
-  "EntryMethod": "VoidWizard.Main.Load"
+  "AssemblyName": "BrokenFeatures.dll",
+  "EntryMethod": "BrokenFeatures.Main.Load"
 }

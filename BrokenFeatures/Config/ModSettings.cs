@@ -6,12 +6,10 @@ using static UnityModManagerNet.UnityModManager;
 namespace BrokenFeatures.Config {
     static class ModSettings {
         public static ModEntry ModEntry;
-        public static Fixes Fixes;
         public static AddedContent AddedContent;
         public static Blueprints Blueprints;
 
         public static void LoadAllSettings() {
-            LoadSettings("Fixes.json", ref Fixes);
             LoadSettings("AddedContent.json", ref AddedContent);
             LoadSettings("Blueprints.json", ref Blueprints);
         }

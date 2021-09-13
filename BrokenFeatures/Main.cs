@@ -5,6 +5,7 @@ using System;
 using BrokenFeatures.Config;
 using BrokenFeatures.Utilities;
 using UnityModManagerNet;
+using System.Reflection;
 
 namespace BrokenFeatures
 {
@@ -13,12 +14,24 @@ namespace BrokenFeatures
         public static bool Enabled;
         static bool Load(UnityModManager.ModEntry modEntry)
         {
-            var harmony = new Harmony(modEntry.Info.Id);
-            ModSettings.ModEntry = modEntry;
-            ModSettings.LoadAllSettings();
-            harmony.PatchAll();
-            PostPatchInitializer.Initialize();
-            return true;
+            try
+            {
+                modEntry.OnToggle = OnToggle;
+                var harmony = new Harmony(modEntry.Info.Id);
+                ModSettings.ModEntry = modEntry;
+                ModSettings.LoadAllSettings();
+                harmony.PatchAll(Assembly.GetExecutingAssembly());
+                PostPatchInitializer.Initialize();
+                return true;
+            }
+            catch (System.Reflection.ReflectionTypeLoadException ex)
+            {
+                foreach (Exception inner in ex.LoaderExceptions)
+                {
+                    Log(inner.ToString());
+                }
+            }
+            return false;
         }
         static bool OnToggle(UnityModManager.ModEntry modEntry, bool value)
         {

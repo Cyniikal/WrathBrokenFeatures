@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 VoidWizard/*.json
+BrokenFeatures/lib/**
 lib/**
 BrokenFeatures/Assets/**
 BrokenFeatures/VoidWizard/**/*.json
