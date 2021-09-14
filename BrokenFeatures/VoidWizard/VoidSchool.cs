@@ -19,7 +19,7 @@ namespace BrokenFeatures.VoidWizard
             var WizardSchools = Resources.GetBlueprint<BlueprintFeatureSelection>("8d4637639441f1041bee496f20af7fa3");
             var SpecialistSchoolSelection = Resources.GetBlueprint<BlueprintFeatureSelection>("5f838049069f1ac4d804ce0862ab5110");
 
-            var VoidSchoolIcon = AssetLoader.LoadInternal("Abilities", "Icon_AuraOfPrescience.png");
+            var VoidSchoolIcon = AssetLoader.LoadInternal("Abilities", "Icon_VoidSchool.png");
 
 
             // Reference variables for later
@@ -36,7 +36,6 @@ namespace BrokenFeatures.VoidWizard
 
             var VoidSpellList = Resources.GetBlueprint<BlueprintFeature>("2ded002a-790f-4727-8b20-ad73b9c0a679");
             var VoidSpellListFeatureUnitFactReference = VoidSpellList.ToReference<BlueprintUnitFactReference>();
-
 
 
             var VoidSchoolBaseFeature = Helpers.CreateBlueprint<BlueprintFeature>("VoidSchoolFeature", bp =>
@@ -76,7 +75,7 @@ namespace BrokenFeatures.VoidWizard
                 bp.Ranks = 1;
                 bp.IsClassFeature = true;
                 bp.SetDescription("This aura grants a +2 insight bonus on ability checks, attack rolls, damage rolls, saving throws, and skill checks to all allies with 30 feet of the Void Wizard.");
-                bp.SetName("Aura of Prescience");
+                bp.SetName("Void School - Greater Feature");
                 bp.m_Icon = VoidSchoolIcon;
 
                 bp.AddComponent(Helpers.Create<AddFacts>(f =>

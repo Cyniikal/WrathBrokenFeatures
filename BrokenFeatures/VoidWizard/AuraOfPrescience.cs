@@ -77,6 +77,13 @@ namespace BrokenFeatures.VoidWizard
                 {
                     bonus.Value = 2;
                     bonus.Descriptor = ModifierDescriptor.Insight;
+                    bonus.Multiplier = 1;
+                }));
+                bp.AddComponent(Helpers.Create<AddStatBonus>(bonus =>
+                {
+                    bonus.Value = 2;
+                    bonus.Stat = StatType.Initiative;
+                    bonus.Descriptor = ModifierDescriptor.Insight;
                 }));
             });
 

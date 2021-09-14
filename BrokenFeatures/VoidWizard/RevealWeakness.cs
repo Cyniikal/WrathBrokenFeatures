@@ -21,12 +21,10 @@ namespace BrokenFeatures.VoidWizard
     {
         public static void AddRevealWeaknessFeature()
         {
-
             var WizardClass = Resources.GetBlueprint<BlueprintCharacterClass>("ba34257984f4c41408ce1dc2004e342e");
             var WizardClassReferenceArray = new BlueprintCharacterClassReference[] { WizardClass.ToReference<BlueprintCharacterClassReference>() };
 
-            var RevealWeaknessIcon = AssetLoader.LoadInternal("Abilities", "Icon_AuraOfPrescience.png");
-
+            var RevealWeaknessIcon = AssetLoader.LoadInternal("Abilities", "Icon_RevealWeakness.png");
 
             // The resource to be consumed by the wizard when using Aura of Prescience
             var RevealWeaknessResourceAmount = new BlueprintAbilityResource.Amount

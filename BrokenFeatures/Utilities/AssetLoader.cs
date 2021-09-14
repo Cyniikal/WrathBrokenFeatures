@@ -13,7 +13,7 @@ namespace BrokenFeatures.Utilities {
             public static Sprite Create(string filePath) {
                 var bytes = File.ReadAllBytes(icons_folder + filePath);
                 var texture = new Texture2D(64, 64, TextureFormat.DXT5, false);
-                texture.LoadRawTextureData(bytes);
+                _ = ImageConversion.LoadImage(texture, bytes);
                 return Sprite.Create(texture, new Rect(0, 0, 64, 64), new Vector2(0, 0));
             }
         }

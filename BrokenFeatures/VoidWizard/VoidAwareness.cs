@@ -18,7 +18,7 @@ namespace BrokenFeatures.VoidWizard
             var WizardClass = Resources.GetBlueprint<BlueprintCharacterClass>("ba34257984f4c41408ce1dc2004e342e");
             var WizardClassReferenceArray = new BlueprintCharacterClassReference[] { WizardClass.ToReference<BlueprintCharacterClassReference>() };
 
-            var VoidAwarenessIcon = AssetLoader.LoadInternal("Abilities", "Icon_AuraOfPrescience.png");
+            var VoidAwarenessIcon = AssetLoader.LoadInternal("Abilities", "Icon_VoidAwareness.png");
 
             var VoidAwarenessFeature = Helpers.CreateBlueprint<BlueprintFeature>("VoidAwarenessFeature", bp =>
             {
@@ -43,6 +43,18 @@ namespace BrokenFeatures.VoidWizard
 
                 bp.AddComponent(Helpers.Create<SavingThrowBonusAgainstAbilityType>(b =>
                 {
+                    b.AbilityType = Kingmaker.UnitLogic.Abilities.Blueprints.AbilityType.Spell;
+                    b.ModifierDescriptor = ModifierDescriptor.Insight;
+                    b.Value = 0;
+                    b.Bonus = Helpers.Create<ContextValue>(v =>
+                    {
+                        v.ValueType = ContextValueType.Rank;
+                    });
+                }));
+
+                bp.AddComponent(Helpers.Create<SavingThrowBonusAgainstAbilityType>(b =>
+                {
+                    b.AbilityType = Kingmaker.UnitLogic.Abilities.Blueprints.AbilityType.SpellLike;
                     b.ModifierDescriptor = ModifierDescriptor.Insight;
                     b.Value = 0;
                     b.Bonus = Helpers.Create<ContextValue>(v =>
