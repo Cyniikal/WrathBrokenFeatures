@@ -6,7 +6,7 @@
 VoidWizard/*.json
 BrokenFeatures/lib/**
 lib/**
-BrokenFeatures/Assets/**
+#BrokenFeatures/Assets/**
 BrokenFeatures/VoidWizard/**/*.json
 
 # User-specific files
